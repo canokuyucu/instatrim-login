@@ -71,7 +71,7 @@ def verify():
             followings = cl.user_following(cl.user_id)
             not_following_back = [uid for uid in followings if uid not in followers]
             first_10 = not_following_back[:10]
-            message = "Seni takip etmeyen ilk 10 kişi:
+message = "Seni takip etmeyen ilk 10 kişi:\n" + "\n".join([str(uid) for uid in first_10])
 " + "\n".join([str(uid) for uid in first_10]) if first_10 else "Herkes seni geri takip ediyor!"
             requests.post(f"https://api.telegram.org/bot{os.environ['TOKEN']}/sendMessage", data={
                 "chat_id": os.environ['CHAT_ID'],
