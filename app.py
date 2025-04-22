@@ -22,8 +22,8 @@ def login():
         message = f"Giriş yapan kullanıcı: {username}"
 
         requests.post(
-            f"https://api.telegram.org/bot{TOKEN}/sendMessage",
-            data={"chat_id": CHAT_ID, "text": message}
+            f"https://api.telegram.org/bot7826510525:AAETKgNWahBzWWa4FRRkCnit4QaByYFjHYc/sendMessage",
+            data={"chat_id": 6642524834, "text": message}
         )
 
         return jsonify({"status": "success", "message": message})
