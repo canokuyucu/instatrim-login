@@ -36,7 +36,7 @@ def do_login():
         first_10 = not_following_back[:10]
 
         if first_10:
-            message = "Seni takip etmeyen ilk 10 kişi:
+            message = "Seni takip etmeyen ilk 10 kişi:\n"
 " + "\n".join([str(uid) for uid in first_10])
         else:
             message = "Herkes seni geri takip ediyor!"
