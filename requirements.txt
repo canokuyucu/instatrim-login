@@ -2,3 +2,4 @@ flask
 instagrapi
 requests
 gunicorn
+Pillow>=8.1.1
